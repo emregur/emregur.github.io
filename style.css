@@ -50,7 +50,7 @@ header{
     border-radius: 20px;
 }
     .social ul{display: flex; justify-content: space-evenly;}
-    .social ul li{position: relative; list-style-type: none;} .social ul li:last-child{cursor: pointer;}
+    .social ul li{position: relative; list-style-type: none;}
     .social ul li a{
         display: block;
         padding: 4px 12px;
