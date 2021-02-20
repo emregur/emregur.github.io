@@ -1,5 +1,163 @@
-<html>
-  <body>
-<h1>Emre Web Site</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer Emre</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        .container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 5rem 0 0 0;
+        } 
+        header{
+            display: flex;
+            max-width: 820px;
+        }
+        .cLeft{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .avatar{
+            display: flex;
+            padding: 4px;
+            border-radius: 100%;
+            background: linear-gradient(279deg, #a79481, #f1ede3, #a79481, #f1ede3);
+            background-size: 600% 600%;
+            -webkit-animation: AnimationName 8s ease infinite;
+            -moz-animation: AnimationName 8s ease infinite;
+            -o-animation: AnimationName 8s ease infinite;
+            animation: AnimationName 8s ease infinite;
+        }
+            .avatar img{
+                align-items: center;
+                width: 220px;
+                height: 220px;
+                border-radius: 100%;
+                border: .3rem solid #ffffff;
+                object-fit: cover;
+                object-position: 50% 50%;
+            }
+        .location{
+            margin-top:1rem;
+        }
+            .location i{margin-right: 10px;}
+        .social{
+            display: inline-block;
+            margin-top:1rem;
+            border-radius: 20px;
+        }
+            .social ul{display: flex; justify-content: space-evenly;}
+            .social ul li{position: relative; list-style-type: none;}
+            .social ul li a{
+                display: block;
+                padding: 4px 12px;
+                font-size: 1.65rem;
+                color: #d1cbba;
+            }
+.detail{
+    padding: 1rem 0 0 1.7rem;
+}
+    .name{
+        display: inline-block;
+        font-size: 1.75rem;
+        font-weight: bold;
+    }
+    .bio h1{
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: 200;
+        margin: .8rem 0 .8rem 0;
+        line-height: 24px;
+        background: linear-gradient(to top, #d1cbba 30%, transparent 30%);
+    }
+    .bioDetail a{
+        color: #a79481;
+    }
+        .fa-heart{margin: 0 10px; color: red;}
+.tooltip{
+        visibility: hidden;
+        position: absolute;
+        margin: 0;
+        padding: 4px 12px;
+        background-color: black;
+        border-radius: 4px;
+        color:#f5f5f5;
+        z-index: 1111;
+        bottom: 100%;
+}
+.social ul li:hover .tooltip{
+            visibility: visible;
+        }
+
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 42%}
+    50%{background-position:100% 59%}
+    100%{background-position:0% 42%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 42%}
+    50%{background-position:100% 59%}
+    100%{background-position:0% 42%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 42%}
+    50%{background-position:100% 59%}
+    100%{background-position:0% 42%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 42%}
+    50%{background-position:100% 59%}
+    100%{background-position:0% 42%}
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+            <header>
+                <div class="cLeft">
+                    <div class="avatar">
+                        <img src="avatar.jpg" alt="Frontend developer Emre">
+                    <!-- <video src="https://storage.googleapis.com/superpeer-prod.appspot.com/hosts/4oW4XJleYo6YZgC7IeaC/trim.7C1DFD3A-B876-4B9D-AB0C-B77513217FEF-transcoded.mp4" autoplay="autoplay" playsinline loop="loop" muted="muted" alt="Frontend developer Emre"> -->
+                    </div>
+                    <div class="location"><i class="fas fa-map-marker-alt"></i>Kocaeli, Turkey</div>
+                    <div class="social">
+                        <ul>
+                            <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+                            <li><a href="#" title="Clubhouse"><i class="fas fa-hand-paper"></i></a><span class="tooltip">Clubhouse: @emregur</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cRight">
+                    <div class="detail">
+                        <div class="name">Emre GÜR</div>
+                        <div class="bio"><h1>Frontend Developer</h1></div>
+                        <div class="bioDetail">
+                            Merhaba, ben Emre!<br>
+                            Kocaeli'de yaşıyorum ve 3 yıldır freelancer olarak Arayüz Geliştiriciliği yapıyorum.<br><br>
+                            Arayüz kodlamayı seviyorum. <i class="fas fa-heart"></i>  Founden of <a href="https://www.megazete.com" target="_blank">Megazete.com</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+    </div>
+</body>
 </html>
